@@ -3,7 +3,7 @@ self.addEventListener("install", (event) => {
     caches.open("pwa-cache").then((cache) => {
       return cache.addAll([
         "/",
-        "/index.html"
+        "index.html"
       ]);
     })
   );
@@ -16,3 +16,4 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
